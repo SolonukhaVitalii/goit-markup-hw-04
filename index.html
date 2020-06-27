@@ -22,8 +22,16 @@
             </ul>
         </nav>
         <address class="contacts">
-            <a href="mailto:info@devstudio.com" class="link contact">info@devstudio.com</a>
-            <a href="tel:+38096111111" class="link contact">+38 096 111 11 11</a>
+            <a href="mailto:info@devstudio.com" class="link contact">
+                <svg class="mail-icon">
+                    <use href="./images/sprite/mail"></use>
+                </svg>
+                info@devstudio.com</a>
+            <a href="tel:+38096111111" class="link contact">
+                <svg class="tel-icon">
+                    <use href="./images/symbol-defs.svg#tel"></use>
+                </svg>
+                +38 096 111 11 11</a>
         </address>
     </header>
     <main>
@@ -37,7 +45,9 @@
             <div class="container container-mesedg">
                 <ul class="list">
                     <li class="list-item mesedg icon-antena">
-                        <img src="./images/antena.jpg" alt="" class="foto-mesedg">
+                        <svg>
+                            <use href="./images/symbol-defs.svg#diagram"></use>
+                        </svg>
                         <h3 class="section-title">Внимание к деталям</h3>
                         <p class="section-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
@@ -83,18 +93,24 @@
                 <h2 class="section-titles">Наша команда</h2>
                 <ul class="site-nav list">
                     <li class="list-item fotos">
-                        <img src="./images/img(1).jpg" alt="" class="foto-name">
+                        <img src="./images/comanda1.jpg" alt="" class="foto-name">
                         <h3 class="section-name">Николай Кучеренко</h3>
                         <p class="section-tex">Product Designer</p>
                         <ul class="list list-name">
-                            <li ><a href="" class="link">Instagram</a></li>
+                            <li>
+                                <a href="" class="link">
+                                    <svg class="link-icon">
+                                        <use href="./images/symbol-defs.svg#instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
                             <li><a href="" class="link">Twitter</a></li>
                             <li><a href="" class="link">Facebook</a></li>
                             <li><a href="" class="link">LinkedIn</a></li> 
                         </ul>
                     </li>
                     <li class="list-item fotos">
-                        <img src="./images/img(2).jpg" alt="" class="foto-name">
+                        <img src="./images/comanda2.jpg" alt="" class="foto-name">
                         <h3 class="section-name">Ольга Иванова</h3>
                         <p class="section-tex">Frontend Developer</p>
                         <ul class="list list-name">
@@ -105,7 +121,7 @@
                         </ul>
                     </li>
                     <li class="list-item fotos">
-                        <img src="./images/img(3).jpg" alt="" class="foto-name">
+                        <img src="./images/comanda3.jpg" alt="" class="foto-name">
                         <h3 class="section-name">Андрей Шевченко</h3>
                         <p class="section-tex">Marketing</p>
                         <ul class="list list-name">
@@ -116,7 +132,7 @@
                         </ul>
                     </li>
                     <li class="list-item fotos">
-                        <img src="./images/img(4).jpg" alt="" class="foto-name">
+                        <img src="./images/comanda4.jpg" alt="" class="foto-name">
                         <h3 class="section-name">Иван Николаев</h3>
                         <p class="section-tex">UI Designer</p>
                         <ul class="list list-name">
@@ -133,12 +149,18 @@
             <div class="container container-client">
                 <h2 class="section-titles clienty">Постоянные клиенты</h2>
                     <ul class="site-nav list clients">
-                        <li class="list-item client"><a href="aaa"><img src="./images/Client1.jpg" alt=""></a></li>
-                        <li class="list-item client"><a href="aaa"><img src="./images/Client2.jpg" alt=""></a></li>
-                        <li class="list-item client"><a href="aaa"><img src="./images/Client3.jpg" alt=""></a></li>
-                        <li class="list-item client"><a href="aaa"><img src="./images/Client4.jpg" alt=""></a></li>
-                        <li class="list-item client"><a href="aaa"><img src="./images/Client5.jpg" alt=""></a></li>
-                        <li class="list-item client"><a href="aaa"><img src="./images/Client6.jpg" alt=""></a></li>
+                        <li class="list-item client">
+                            <a href="aaa" class="box-icon">
+                                <svg class="client-icon">
+                                    <use href="./images/symbol-defs.svg#logo1"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="list-item client"><a href="aaa"></a></li>
+                        <li class="list-item client"><a href="aaa"></a></li>
+                        <li class="list-item client"><a href="aaa"></a></li>
+                        <li class="list-item client"><a href="aaa"></a></li>
+                        <li class="list-item client"><a href="aaa"></a></li>
                     </ul>
             </div>
         </section>
