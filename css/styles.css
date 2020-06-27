@@ -129,15 +129,11 @@ a {
 
 .mail-icon {
     background-image: url("../images/mail.svg");
-    width: 16px;
-    height: 12px;
     margin-right: 10px;
 }
 
 .tel-icon {
     background-image: url("../images/tel.svg");
-    width: 10px;
-    height: 15px;
     margin-right: 10px;
 }
 
@@ -221,7 +217,8 @@ a {
 .mesedg {
     width: calc((100% - 30px * 3) / 4);
     margin-right: 30px;
-    margin-left: 0;   
+    margin-left: 0;
+    justify-content: center;
 }
 
 .mesedg:last-child {
@@ -385,16 +382,47 @@ a {
     margin-left: 32px;
 }
 
+
+
+
+
 .in {
+    padding: 0;
+    border: none;
     width: 44px;
     height: 44px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+
+.in .inst-icon {
+    color: #eee;
+}
+
+
+.in:hover {
+    cursor: pointer;
+    background-color: var(--accent-color);
+}
+.in:hover .inst-icon {
+    color: #ffffff;
 }
 
 .inst-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 20px;
     height: 20px;
     background-image: url(../images/instagram.svg);
 }
+
+
+
+
+
+
+
 
 .twit-icon {
     width: 20px;
@@ -442,6 +470,11 @@ a {
     background-repeat: no-repeat;
     background-color: #F5F4FA;
     border: 0.5px solid #000000;
+}
+
+.box-icon:hover {
+    cursor: pointer;
+    border: var(--accent-color);
 }
 
 .logo1-icon {
