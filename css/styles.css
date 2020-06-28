@@ -382,10 +382,6 @@ a {
     margin-left: 32px;
 }
 
-
-
-
-
 .in {
     padding: 0;
     border: none;
@@ -414,15 +410,8 @@ a {
     align-items: center;
     width: 20px;
     height: 20px;
-    background-image: url(../images/instagram.svg);
+    
 }
-
-
-
-
-
-
-
 
 .twit-icon {
     width: 20px;
