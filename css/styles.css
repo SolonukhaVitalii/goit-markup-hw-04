@@ -132,6 +132,26 @@ a {
     color: var(--accent-color);
 }
 
+.mail-icon {
+    content: "";
+    background-image:
+    url("../images/mail.svg");
+    margin-right: 10px;
+}
+
+.tel-icon {
+    content: "";
+    background-image:
+    url("../images/tel.svg");
+    margin-right: 10px;
+}
+
+.mail-icon .tel-icon:hover {
+    cursor: pointer;
+    color: var(--accent-color);
+}
+
+
 
 /*Контейнери*/
 
@@ -141,7 +161,12 @@ a {
     margin-left: auto;
     margin-right: auto;
     outline: 1px solid black;
-    background-image:
+    background-color: #000000;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.8),
+        rgba(47, 48, 58, 0.8)
+        ),
         url("../images/Header.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -219,34 +244,26 @@ a {
     display: block;
     content: "";
     height: 120px;
+    background-color: #F5F4FA;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #F5F4FA;
+    background-position: center;
 }
 
-.icon-antena::before {
+.mesedg:nth-child(1)::before {
     background-image: url("../images/antena.svg");
 }
 
-.icon-clock::before {
+.mesedg:nth-child(2)::before {
     background-image: url("../images/clock.svg");
 }
 
-.icon-diagram::before {
+.mesedg:nth-child(3)::before {
     background-image: url("../images/diagram.svg");
 }
 
-.icon-astronaut::before {
+.mesedg:nth-child(4)::before {
     background-image: url("../images/astronaut.svg");
-}
-
-.icon {
-    width: 70px;
-    height: 70px;
-}
-
-.antena-icon {
-    background-position: center;
 }
 
 .section-title {
@@ -329,6 +346,7 @@ a {
     width: calc((100% - 30px * 3) / 4);
     margin-right: 30px;
     margin-left: 0;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
 }
 
 .fotos:last-child {
@@ -372,26 +390,15 @@ a {
     margin-left: 32px;
 }
 
-.in {
-    padding: 0;
-    border: none;
+.social-link {
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background-color: #ffffff;
 }
 
-.in .inst-icon {
-    color: #eee;
-}
-
-
-.in:hover {
-    cursor: pointer;
+.social-link:hover {
     background-color: var(--accent-color);
-}
-.in:hover .inst-icon {
-    color: #ffffff;
 }
 
 .inst-icon {
@@ -399,27 +406,35 @@ a {
     justify-content: center;
     align-items: center;
     width: 20px;
-    height: 20px;
-    
-    
+    height: 20px; 
+    background-image: url("../images/instagram.svg");
 }
 
 .twit-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 20px;
     height: 20px;
-    background-image: url(../images/twitter.svg);
+    background-image: url("../images/twitter.svg");
 }
 
 .fac-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 20px;
     height: 20px;
-    background-image: url(../images/facebook.svg);
+    background-image: url("../images/facebook.svg");
 }
 
 .ln-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     width: 20px;
     height: 20px;
-    background-image: url(../images/linkedin.svg);
+    background-image: url("../images/linkedin.svg");
 }
 
 .container-client {
@@ -450,6 +465,7 @@ a {
     background-repeat: no-repeat;
     background-color: #F5F4FA;
     border: 0.5px solid #000000;
+    border-radius: 5%;
 }
 
 .box-icon:hover {
@@ -458,9 +474,11 @@ a {
 }
 
 .logo1-icon {
-    background-image: url("../images/logo1.svg");
     width: 45px;
     height: 50px;
+    background-image: url("../images/logo1.svg");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .logo2-icon {
@@ -492,9 +510,6 @@ a {
     width: 89px;
     height: 46px;
 }
-
-
-
 
 
 /*Футер*/
@@ -563,8 +578,68 @@ a {
     margin-bottom: 20px;
 }
 
-.footer-ul {
-    width: 206px;
+.footer-inst {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-image: url("../images/instagram\ 1.svg");
+    background-color: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border-radius: 50%;
+}
+
+.footer-inst:hover {
+    background-color: var(--accent-color);
+ }
+
+.footer-twit {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-image: url("../images/twitter\ 1.svg");
+    background-color: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border-radius: 50%;
+}
+
+.footer-twit:hover {
+    background-color: var(--accent-color);
+ }
+
+.footer-fac {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-image: url("../images/facebook\ 1.svg");
+    background-color: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border-radius: 50%;
+}
+
+.footer-fac:hover {
+    background-color: var(--accent-color);
+ }
+
+.footer-ln {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-image: url("../images/linkedin\ 1.svg");
+    background-color: rgba(255, 255, 255, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    border-radius: 50%;
+}
+
+ .footer-ln:hover {
+   background-color: var(--accent-color);
 }
 
  .mail {
@@ -576,10 +651,11 @@ a {
  .mails {
     width: 219px;
     margin-bottom: 20px;
+    padding-left: 0;
  }
 
  .buttons {
-    display: inline-block;
+    display: inline-flex;
     border-radius: 4px;
     padding: 10px 32px;
     max-width: 200px;
@@ -589,12 +665,17 @@ a {
     border: 1px solid var(--accent-color);
     background-color: var(--accent-color);
     text-align: center;
+    align-items: center;
+    cursor: pointer;
 }
 
-.send-icon {
+.buttons::after {
     width: 24px;
     height: 24px;
-    background-image: url("../images/send.svg");
+    margin-left: 10px;
+    content: "";
+    background-image: url(../images/send.svg);
+    background-size: contain;
 }
 
 .avtor {
@@ -665,10 +746,12 @@ a {
 .flex-element {
     width: 370px;
     margin: 15px;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
 }
 
 .foto {
     display: block;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 .work-title {
