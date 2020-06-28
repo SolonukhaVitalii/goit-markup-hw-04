@@ -127,16 +127,6 @@ a {
     margin-right: 0;
 }
 
-.mail-icon {
-    background-image: url("../images/mail.svg");
-    margin-right: 10px;
-}
-
-.tel-icon {
-    background-image: url("../images/tel.svg");
-    margin-right: 10px;
-}
-
 .contact:hover,
 .contact:focus {
     color: var(--accent-color);
@@ -410,6 +400,7 @@ a {
     align-items: center;
     width: 20px;
     height: 20px;
+    
     
 }
 
