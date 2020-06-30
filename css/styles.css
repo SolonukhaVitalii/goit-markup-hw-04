@@ -133,25 +133,16 @@ a {
 }
 
 .mail-icon {
-    content: "";
-    background-image:
-    url("../images/mail.svg");
-    margin-right: 10px;
+  
 }
 
-.tel-icon {
-    content: "";
-    background-image:
-    url("../images/tel.svg");
-    margin-right: 10px;
-}
-
-.mail-icon .tel-icon:hover {
-    cursor: pointer;
+.mail-icon:hover {
     color: var(--accent-color);
 }
 
-
+.tel-icon {
+   
+}
 
 /*Контейнери*/
 
@@ -245,9 +236,10 @@ a {
     content: "";
     height: 120px;
     background-color: #F5F4FA;
-    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
+   
 }
 
 .mesedg:nth-child(1)::before {
@@ -459,7 +451,6 @@ a {
 
 .box-icon {
     display: block;
-    content: "";
     height: 90px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -477,8 +468,6 @@ a {
     width: 45px;
     height: 50px;
     background-image: url("../images/logo1.svg");
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 .logo2-icon {
