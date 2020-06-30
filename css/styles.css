@@ -132,17 +132,6 @@ a {
     color: var(--accent-color);
 }
 
-.mail-icon {
-  
-}
-
-.mail-icon:hover {
-    color: var(--accent-color);
-}
-
-.tel-icon {
-   
-}
 
 /*Контейнери*/
 
@@ -229,33 +218,6 @@ a {
 
 .mesedg:last-child {
     margin-right: 0;
-}
-
-.mesedg::before {
-    display: block;
-    content: "";
-    height: 120px;
-    background-color: #F5F4FA;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-   
-}
-
-.mesedg:nth-child(1)::before {
-    background-image: url("../images/antena.svg");
-}
-
-.mesedg:nth-child(2)::before {
-    background-image: url("../images/clock.svg");
-}
-
-.mesedg:nth-child(3)::before {
-    background-image: url("../images/diagram.svg");
-}
-
-.mesedg:nth-child(4)::before {
-    background-image: url("../images/astronaut.svg");
 }
 
 .section-title {
@@ -393,41 +355,7 @@ a {
     background-color: var(--accent-color);
 }
 
-.inst-icon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px; 
-    background-image: url("../images/instagram.svg");
-}
 
-.twit-icon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    background-image: url("../images/twitter.svg");
-}
-
-.fac-icon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    background-image: url("../images/facebook.svg");
-}
-
-.ln-icon {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 20px;
-    height: 20px;
-    background-image: url("../images/linkedin.svg");
-}
 
 .container-client {
     margin-left: auto;
@@ -464,41 +392,6 @@ a {
     border: var(--accent-color);
 }
 
-.logo1-icon {
-    width: 45px;
-    height: 50px;
-    background-image: url("../images/logo1.svg");
-}
-
-.logo2-icon {
-    background-image: url("../images/logo2.svg");
-    width: 40px;
-    height: 52px;
-}
-
-.logo3-icon {
-    background-image: url("../images/logo3.svg");
-    width: 41px;
-    height: 43px;
-}
-
-.logo4-icon {
-    background-image: url("../images/logo4.svg");
-    width: 80px;
-    height: 42px;
-}
-
-.logo5-icon {
-    background-image: url("../images/logo5.svg");
-    width: 59px;
-    height: 47px;
-}
-
-.logo6-icon {
-    background-image: url("../images/logo6.svg");
-    width: 89px;
-    height: 46px;
-}
 
 
 /*Футер*/
@@ -567,70 +460,6 @@ a {
     margin-bottom: 20px;
 }
 
-.footer-inst {
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    background-image: url("../images/instagram\ 1.svg");
-    background-color: rgba(255, 255, 255, 0.1);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px;
-    border-radius: 50%;
-}
-
-.footer-inst:hover {
-    background-color: var(--accent-color);
- }
-
-.footer-twit {
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    background-image: url("../images/twitter\ 1.svg");
-    background-color: rgba(255, 255, 255, 0.1);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px;
-    border-radius: 50%;
-}
-
-.footer-twit:hover {
-    background-color: var(--accent-color);
- }
-
-.footer-fac {
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    background-image: url("../images/facebook\ 1.svg");
-    background-color: rgba(255, 255, 255, 0.1);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px;
-    border-radius: 50%;
-}
-
-.footer-fac:hover {
-    background-color: var(--accent-color);
- }
-
-.footer-ln {
-    display: inline-block;
-    width: 44px;
-    height: 44px;
-    background-image: url("../images/linkedin\ 1.svg");
-    background-color: rgba(255, 255, 255, 0.1);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20px;
-    border-radius: 50%;
-}
-
- .footer-ln:hover {
-   background-color: var(--accent-color);
-}
-
  .mail {
     display: block;
     width: 570px;
@@ -656,15 +485,6 @@ a {
     text-align: center;
     align-items: center;
     cursor: pointer;
-}
-
-.buttons::after {
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-    content: "";
-    background-image: url(../images/send.svg);
-    background-size: contain;
 }
 
 .avtor {
