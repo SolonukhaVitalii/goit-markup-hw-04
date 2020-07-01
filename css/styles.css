@@ -132,6 +132,21 @@ a {
     color: var(--accent-color);
 }
 
+.icon-mail {
+    fill: var(--primary-text-color);
+    margin-right: 5px;
+}
+
+.icon-mail:hover,
+.icon-tel:hover {
+    fill: var(--accent-color);
+}
+
+.icon-tel {
+    fill: var(--primary-text-color);
+    margin-right: 5px;
+}
+
 
 /*Контейнери*/
 
@@ -214,10 +229,20 @@ a {
     margin-right: 30px;
     margin-left: 0;
     justify-content: center;
+    align-items: center;
 }
 
 .mesedg:last-child {
     margin-right: 0;
+}
+
+.icon-mesedg {
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .section-title {
@@ -225,7 +250,6 @@ a {
     text-align: left;
     margin-bottom: 10px;
     
-
     color: var(--title-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -345,17 +369,26 @@ a {
 }
 
 .social-link {
+    display: inline-flex;
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    background-color: #ffffff;
+    background-color: var(--primary-white-color);
+    align-items: center;
+    padding-top: 12px;
 }
 
 .social-link:hover {
     background-color: var(--accent-color);
 }
 
+.icon {
+    fill: var(--primary-text-color);
+}
 
+.icon:hover {
+    fill: var(--primary-white-color);;
+}
 
 .container-client {
     margin-left: auto;
@@ -378,21 +411,26 @@ a {
 }
 
 .box-icon {
-    display: block;
+    display: flex;
     height: 90px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-color: #F5F4FA;
-    border: 0.5px solid #000000;
+    border: 0.1px solid #AFB1B8;
     border-radius: 5%;
+    align-items: center;
+    padding-left: 60px;
 }
 
 .box-icon:hover {
-    cursor: pointer;
-    border: var(--accent-color);
+    border: 0.1px solid var(--accent-color);
+    border-radius: 5%;
 }
 
+.icon-logo {
+    fill: var(--primary-text-color);
+}
 
+.icon-logo:hover {
+    fill: var(--accent-color);
+}
 
 /*Футер*/
 
@@ -460,6 +498,12 @@ a {
     margin-bottom: 20px;
 }
 
+.icons {
+   padding-left: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    background-position: center;
+}
+
  .mail {
     display: block;
     width: 570px;
@@ -485,6 +529,11 @@ a {
     text-align: center;
     align-items: center;
     cursor: pointer;
+}
+
+.icon-send {
+    fill: var(--primary-white-color);
+    margin-left: 10px;
 }
 
 .avtor {
